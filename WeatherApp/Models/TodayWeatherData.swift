@@ -6,7 +6,6 @@ struct TodayWeatherData {
     let icons: [Icons]
 }
 
-
 struct WeatherDescription {
     let temp: Double
     let desc: String

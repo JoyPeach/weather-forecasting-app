@@ -1,25 +1,24 @@
 import Foundation
 import UIKit
 
-class MainViewController: UIViewController {
-    var mainView: MainView! { return (self.view as! MainView) }
+class TodayWeatherViewController: UIViewController {
+    var todayWeatherView: TodayWeatherView! { return (self.view as! TodayWeatherView) }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
     }
     
     override func loadView() {
-        self.view = MainView(frame: UIScreen.main.bounds)
+        self.view = TodayWeatherView(frame: UIScreen.main.bounds)
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         let isLandscape = size.width > size.height
         if isLandscape {
-            mainView.centerContentStack.axis = .horizontal
+            todayWeatherView.centerContentStack.axis = .horizontal
         } else {
-            mainView.centerContentStack.axis = .vertical
+            todayWeatherView.centerContentStack.axis = .vertical
         }
     }
 }

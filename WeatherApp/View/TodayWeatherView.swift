@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 
-class MainView: UIView {
+class TodayWeatherView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -135,7 +135,7 @@ class MainView: UIView {
         stackView.distribution = .equalCentering
         stackView.spacing = 5
         stackView.isLayoutMarginsRelativeArrangement = true
-        stackView.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        stackView.layoutMargins = UIEdgeInsets(top: 50, left: 0, bottom: 0, right: 0)
         return stackView
     }()
     
@@ -217,7 +217,7 @@ class MainView: UIView {
         stackView.distribution = .equalCentering
         stackView.spacing = 5
         stackView.isLayoutMarginsRelativeArrangement = true
-        stackView.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 120, right: 0)
+        stackView.layoutMargins = UIEdgeInsets(top: 30, left: 0, bottom: 100, right: 0)
         return stackView
     }()
     
