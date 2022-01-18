@@ -12,13 +12,13 @@ class TodayWeatherViewController: UIViewController {
         self.view = TodayWeatherView(frame: UIScreen.main.bounds)
     }
     
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-        let isLandscape = size.width > size.height
-        if isLandscape {
-            todayWeatherView.centerContentStack.axis = .horizontal
-        } else {
-            todayWeatherView.centerContentStack.axis = .vertical
-        }
-    }
+//    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+//        super.viewWillTransition(to: size, with: coordinator)
+//        let isLandscape = size.width > size.height
+//        if isLandscape {
+//            todayWeatherView.centerContentStack.axis = .horizontal
+//        } else {
+//            todayWeatherView.centerContentStack.axis = .vertical
+//        }
+//    }
 }

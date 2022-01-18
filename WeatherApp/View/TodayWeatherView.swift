@@ -23,7 +23,7 @@ class TodayWeatherView: UIView {
         mainStack.addArrangedSubview(weatherIconStack)
         weatherIconStack.addArrangedSubview(weatherIcon)
         
-        mainStack.addArrangedSubview(centerContentStack)
+//        mainStack.addArrangedSubview(centerContentStack)
         mainStack.addArrangedSubview(locationAndDescStack)
         locationAndDescStack.addArrangedSubview(locationLabel)
         locationAndDescStack.addArrangedSubview(descriptionLabel)
@@ -102,14 +102,13 @@ class TodayWeatherView: UIView {
         return stackView
     }()
     
-    let centerContentStack: UIStackView = {
-        let stackView = UIStackView(frame: .zero)
-        stackView.axis = .vertical
-        stackView.distribution = .equalSpacing
-        stackView.spacing = 5
-        return stackView
-    }()
-
+//    let centerContentStack: UIStackView = {
+//        let stackView = UIStackView(frame: .zero)
+//        stackView.axis = .vertical
+//        stackView.distribution = .equalSpacing
+//        stackView.spacing = 5
+//        return stackView
+//    }()
     
     let locationLabel: UILabel = {
         let label = UILabel(frame: .zero)

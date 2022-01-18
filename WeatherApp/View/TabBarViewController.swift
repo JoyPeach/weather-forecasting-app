@@ -8,6 +8,8 @@ class TabBarViewController: UITabBarController {
         UITabBar.appearance().barTintColor = .systemBackground
         tabBar.tintColor = .label
         setupVCs()
+        
+        WeatherAPI.shared.fetchWeatherForecast()
     }
     
     func createNavController(
